@@ -1,0 +1,104 @@
+<section class="updateUser">
+  <form ng-submit="vm.updateUser()">
+    <div class="columns">
+
+      <div class="column is-one-quarter">
+        <figure class="image is-square" ng-if="vm.user.profilePic">
+          <img src="{{ vm.user.profilePic }}">
+        </figure>
+      </div>
+
+      <div class="column">
+        <div class="paleBackGround">
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="firstName">First Name</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-normal userUpdate" type="text" name="firstName" id="firstName" ng-model="vm.user.firstName"  placeholder="First Name">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="lastName">Last Name</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-normal userUpdate" type="text" name="lastName" id="lastName" ng-model="vm.user.lastName" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="username">Username</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-normal userUpdate" type="text" name="username" id="username" ng-model="vm.user.username" placeholder="username">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label" for="bio">Bio</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea userUpdate"  name="bio" id="bio" ng-model="vm.user.bio" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label">Profile Picture</label>
+            </div>
+            <div class="field-body">
+              <div class="file">
+                <label class="control">
+                  <input class="file-input" type="file" ng-model="vm.user.profilePic" upload-image>
+                  <span class="file-cta userUpdate button">
+                    <span class="file-icon">
+                      <i class="fa fa-upload"></i>
+                    </span>
+                    Choose a file…
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-label is-normal">
+              <label class="label hidden"></label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <p>
+                    <button class="button userUpdate greenButton" type="submit">Update Profile</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

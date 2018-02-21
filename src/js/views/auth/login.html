@@ -1,0 +1,43 @@
+<section class="loginPage paleBackGround">
+  <div>
+    <div>
+      <form ng-submit="vm.submit()">
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="email">Email</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input loginInput" type="text" name="email" id="email" ng-model="vm.credentials.email" placeholder="@">
+                <span class="icon is-small is-left">
+          <i class="fa fa-envelope"></i>
+        </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Password</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control has-icons-left">
+                <input class="input loginInput" type="password" name="password" id="password" ng-model="vm.credentials.password" placeholder="Password">
+                <span class="icon is-small is-left">
+          <i class="fa fa-lock"></i>
+        </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons has-addons is-right">
+            <button class="button greenButton loginButton" type="submit" value="Login">LogIn</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

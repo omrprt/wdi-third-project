@@ -1,0 +1,26 @@
+.regPage {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px 30px 30px 0px;
+  width: 600px;
+  label.label {
+    min-width: 175px;
+  }
+}
+
+section.updateUser {
+  label.label {
+    min-width: 125px;
+  }
+  .paleBackGround {
+    width: 600px;
+    padding: 30px 30px 30px 20px;
+  }
+}
+
+.userUpdate {
+  min-width: 0;
+  width: 400px;
+}

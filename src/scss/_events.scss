@@ -1,0 +1,76 @@
+.neededItem {
+  text-align: right;
+  width: 140px;
+}
+
+.commentField {
+  margin-top: 20px;
+}
+
+.google-map {
+  border: 0;
+  border-radius: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.eventInput {
+  min-width: 0;
+  width: 400px;
+}
+
+section.newEvent {
+  align-items: center;
+  background-color: #f8f9f1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  min-height: 525px;
+  padding: 30px 30px 30px 0;
+  width: 700px;
+  label.label {
+    min-width: 175px;
+  }
+}
+
+section.updateEvent {
+  label.label {
+    min-width: 125px;
+  }
+  .paleBackGround {
+    width: 600px;
+    padding: 30px 0;
+  }
+}
+
+.iClaimed {
+  width: 190px;
+}
+
+.claimedItem {
+  border-radius: 10px;
+  width: 230px;
+}
+
+.bList {
+  background-color: #f8f9f1;
+  border-radius: 10px;
+  min-height: 500px;
+  padding: 15px;
+}
+
+.partyDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.addInput {
+  margin-bottom: 12px;
+}

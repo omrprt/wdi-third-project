@@ -1,0 +1,128 @@
+<section class="regPage paleBackGround">
+  <form ng-submit="vm.submit()">
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label" for="firstName">First Name</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input class="input regInput" type="text" name="firstName" id="firstName" ng-model="vm.user.firstName"  placeholder="First Name">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label" for="lastName">Last Name</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input class="input regInput" type="text" name="lastName" id="lastName" ng-model="vm.user.lastName" placeholder="Last Name">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label" for="username">Username</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input class="input regInput" type="text" name="username" id="username" ng-model="vm.user.username" placeholder="username">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label" for="email">Email</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control has-icons-left">
+            <input class="input regInput" type="email" name="email" id="email" ng-model="vm.user.email" placeholder="Email">
+            <span class="icon is-small is-left">
+      <i class="fa fa-envelope"></i>
+    </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label" for="password">Password</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control has-icons-left">
+            <input class="input regInput" type="password" name="password" id="password" ng-model="vm.user.password" placeholder="password">
+            <span class="icon is-small is-left">
+      <i class="fa fa-lock"></i>
+    </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label" for="passwordConfirmation">Confirm Password</label>
+      </div>
+      <div class="field-body">
+        <div class="field">
+          <div class="control has-icons-left">
+            <input class="input regInput" type="password" name="passwordConfirmation" id="passwordConfirmation" ng-model="vm.user.passwordConfirmation" placeholder="confirm password">
+            <span class="icon is-small is-left">
+      <i class="fa fa-lock"></i>
+    </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal">
+      <div class="field-label is-normal">
+        <label class="label">Profile Picture</label>
+      </div>
+      <div class="control">
+        <div class="file">
+          <label class="file-label">
+            <input class="file-input" type="file" ng-model="vm.user.profilePic" upload-image>
+            <span class="file-cta regInput button">
+              <span class="file-icon">
+                <i class="fa fa-upload"></i>
+              </span>
+              Choose a file…
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="field is-horizontal" ng-if="vm.user.profilePic">
+      <div class="field-label is-normal">
+        <label class="label">Profile Picture Preview</label>
+      </div>
+      <div class="control">
+        <figure class="image is-square regInput">
+          <img src="{{ vm.user.profilePic }}">
+        </figure>
+      </div>
+    </div>
+
+    <div class="buttons has-addons is-right">
+      <p>
+        <button class="button regInput greenButton" type="submit" value="Register">Register</button>
+      </p>
+    </div>
+  </form>
+
+</section>

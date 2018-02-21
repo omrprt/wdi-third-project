@@ -1,0 +1,46 @@
+<section>
+<div class="columns is-4">
+  <div class="column is-one-quarter">
+    <figure class="image is-square">
+      <img src="{{ vm.user.profilePic }}">
+    </figure>
+  </div>
+  <div class="column">
+    <div>
+      <a class="button greenButton" ui-sref="editUser ({ id: vm.user.id })" ng-if="main.isAuthenticated() && main.userId === vm.user.id">
+        Edit my Profile
+      </a>
+      <a class="button greenButton" ui-sref="createEvent" ng-if="main.isAuthenticated() && main.userId === vm.user.id">
+        Create a new event
+      </a>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <div class="viewTitle">{{ vm.user.username | uppercase}}</div>
+          <br>
+          {{ vm.user.bio }}
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class= "columns is-4">
+  <div class="column is-one-quarter paleBackGround myPartiesDisplay">
+    <strong>Parties I am hosting</strong>
+
+    <ul ng-repeat="host in vm.user.hosting">
+      <li><a ui-sref="showEvent({ id: host.id })">{{ host.eventName }}</a></li>
+    </ul>
+
+  </div>
+  <div class="column is-one-quarter paleBackGround myPartiesDisplay">
+    <strong>Parties I am attending</strong>
+
+    <ul ng-repeat="attend in vm.user.attending">
+      <li><a ui-sref="showEvent({ id: attend.id })">{{ attend.eventName }}</a></li>
+    </ul>
+  </div>
+</div>
+</section>

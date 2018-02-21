@@ -1,0 +1,97 @@
+@import "footer";
+@import "navbar";
+@import "homePage";
+@import "login";
+@import "events";
+@import "user";
+
+body  {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  &.home {
+    background-image: url('https://images.unsplash.com/photo-1479803244419-b24dfe9cbafa?ixlib=rb-0.3.5&s=d2e98a6fc665593fe0af82352b0a4401&auto=format&fit=crop&w=2250&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    footer {
+      display: none;
+    }
+  }
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+main.container {
+  margin: 100px auto;
+}
+
+img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+h1, h2 {
+  font-family: 'Bubblegum Sans', cursive;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.myPartiesDisplay {
+  border-radius: 10px;
+  margin: 0 10px;
+  min-height: 250px;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+label.label {
+  min-width: 200px;
+}
+
+.regInput {
+  width: 300px;
+}
+
+.redButton {
+  background-color: #ef493d;
+  color: white;
+  font-weight: bold;
+}
+
+.greenButton {
+  background-color: #32a973;
+  color: white;
+  font-weight: bold;
+}
+
+.paleBackGround {
+  background-color: #f8f9f1;
+  border-radius: 10px;
+}
+
+.viewTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.underline {
+  background-color: silver;
+  height: 1px;
+  margin: 5px auto;
+  width: 90%;
+}

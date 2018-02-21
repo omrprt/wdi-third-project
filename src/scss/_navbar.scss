@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #ef493d;
+  a {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  &.navbar-start a{
+    padding: 30px;
+  }
+  .nav-item {
+    color: white;
+     &:hover {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Bubblegum Sans', cursive
+     }
+  }
+}
+
+.searchbutton {
+  background-color: #a02d25;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar .nav-item {
+    color: #ef493d;
+  }
+}

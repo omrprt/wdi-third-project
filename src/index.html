@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="bringItApp">
+<head>
+  <title>Bring It!</title>
+  <base href="/">
+  <meta charset="utf-8">
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Yantramanav:300,400,500,700,900&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKstuur4XOTCAojB7tzkVjo4XlA0jbGmY"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js" charset="utf-8"></script>
+</head>
+
+<body ng-controller="MainCtrl as main" class="{{ main.pageName }}">
+  <header>
+    <nav ng-hide="main.hideNav" class="navbar level is-fixed-top is-transparent">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item level-item" ui-sref="home">
+            <h1>BringIt!</h1>
+          </a>
+          <div class="level level-item navbar-burger nav-toogle" ng-class="{ 'is-active': main.menuIsOpen }" ng-click="main.menuIsOpen = !main.menuIsOpen"  data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div id="navbarExampleTransparentExample" class="navbar-menu" ng-class="{ 'is-active': main.menuIsOpen }">
+          <div class="navbar-start">
+            <a class="nav-item level-item" ng-if="main.isAuthenticated()" ui-sref="userShow({ id: main.userId })">
+              MY PROFILE
+            </a>
+            <a class="nav-item level-item" ui-sref="createEvent" ng-if="main.isAuthenticated()">
+              CREATE EVENT
+            </a>
+            <a class="nav-item level-item" ui-sref="login" ng-if="!main.isAuthenticated()">
+              LOGIN
+            </a>
+            <a class="nav-item level-item" ui-sref="register" ng-if="!main.isAuthenticated()">
+              REGISTER
+            </a>
+            <a class="nav-item level-item" ng-click="main.logout()" ng-if="main.isAuthenticated()">
+              LOGOUT
+            </a>
+          </div>
+          <div class="navbar-end">
+
+            <form class="nav-item level" ng-if="main.isAuthenticated()" ng-submit="main.searchParty(main.searchInput)">
+              <div class="field has-addons">
+                <div class="control nav-item level-item">
+                  <input class="input" type="text" placeholder="Enter event key..." ng-model="main.searchInput">
+                </div>
+                <div class="control">
+                  <button class="button searchbutton">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container" ui-view>
+  </main>
+  <footer class="redButton">
+    <p>Coded by<a target="_blank" href="https://github.com/weresquirrel"> Krizstina,</a><a target="_blank" href="https://github.com/omrprt"> Omar</a> and<a target="_blank" href="https://github.com/guillermograham"> Will.</a></p>
+  </footer>
+</body>
+</html>

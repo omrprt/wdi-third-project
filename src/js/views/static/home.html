@@ -1,0 +1,25 @@
+<div class="homePage">
+  <div class="homeLogo">
+  <h2>BringIt!</h2>
+  <p class="is-italic">what to bring to your next event?</p>
+  <div class="homeButtons">
+    <div ng-if="main.isAuthenticated()">
+    <a class="button greenButton" ui-sref="userShow({ id: main.userId })">
+      MY PROFILE
+    </a>
+    <a class="button greenButton" ng-click="main.logout()">
+      LOGOUT
+    </a>
+  </div>
+
+    <div ng-if="!main.isAuthenticated()">
+    <a class="button greenButton" ui-sref="login">
+      LOGIN
+    </a>
+    <a class="button greenButton" ui-sref="register">
+      REGISTER
+    </a>
+  </div>
+  </div>
+</div>
+</div>

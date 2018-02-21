@@ -1,0 +1,142 @@
+<section class="newEvent">
+<form class="paleBackGround" ng-submit="vm.createEvent()">
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="eventName">Event name</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input is-normal eventInput" type="text" name="eventName" id="eventName" ng-model="vm.event.eventName" placeholder="Event Name">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="description">Description</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <textarea class="textarea eventInput"  name="description" id="description" ng-model="vm.event.description" rows="4"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="date">Date & Time</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input eventInput" type="datetime-local" name="date" id="date" ng-model="vm.event.date">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="postcode">Postcode</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input eventInput" type="text" name="postcode" id="postcode" ng-model="vm.event.location.postal_code">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="firstLine">1st line</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input eventInput" type="text" name="firstLine" id="firstLine" ng-model="vm.event.location.firstLine">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="secondLine">2nd line</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input eventInput" type="text" name="secondLine" id="secondLine" ng-model="vm.event.location.secondLine">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label" for="city">City/Town</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input eventInput" type="text" name="city" id="city" ng-model="vm.event.location.city">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Event Picture</label>
+          </div>
+          <div class="control">
+            <div class="file">
+              <label class="file-label">
+                <input class="file-input" type="file" ng-model="vm.event.image" upload-image>
+                <span class="file-cta eventInput button">
+                  <span class="file-icon">
+                    <i class="fa fa-upload"></i>
+                  </span>
+                  Choose a file…
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal" ng-if="vm.event.image ">
+          <div class="field-label is-normal">
+            <label class="label">Event Picture Preview</label>
+          </div>
+          <div class="control">
+            <figure class="image is-square eventInput">
+              <img src="{{ vm.event.image }}">
+            </figure>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label hidden"></label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                  <p>
+                    <button class="button eventInput greenButton" type="submit">Create Event</button>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  </form>
+</section>
