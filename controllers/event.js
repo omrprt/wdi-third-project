@@ -1,4 +1,4 @@
-
+  
 const Event = require('../models/event');
 
 // function indexRoute(req, res, next) {

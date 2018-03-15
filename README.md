@@ -3,7 +3,7 @@
 ## Bring It!
 
 <figure>
-  <a href="#"><img src="3rd project"></a>
+  <a href="#"><img src="./src/assets/images/projectphotos/eventview.png"></a>
   <figcaption>This was a group project, and third project for us, at GA:  Our group was composed of Krisztina Sztupakne Molnar, William Graham and Omar Portillo". It is an organizer of items for your guest to bring to your planed potluck, bbq, party, event...
   </figcaption>
 </figure>
@@ -28,10 +28,10 @@ Your app must:
 * A **team git repository hosted on Github**, with a link to your hosted project, and frequent commits from _every_ team member dating back to the _very beginning_ of the project
 * **A ``readme.md`` file**
 
-### [](https://github.com/weresquirrel/WDI-GROUP-PROJECT#setup)Installation and setup
+### [](https://github.com/weresquirrel/WDI-third-PROJECT#setup)Installation and setup
 
 #### Run Locally
-- Download or clone the [Github repo](https://github.com/weresquirrel/WDI-GROUP-PROJECT)
+- Download or clone the [Github repo](https://github.com/weresquirrel/WDI-third-PROJECT)
 - Run `gulp` in the terminal to compile the source code and open in the browser
 
 #### View Online
@@ -55,9 +55,9 @@ Your app must:
   <figcaption>Wireframe using Balsamiq</figcaption>
 </figure>
 
-### [](https://github.com/weresquirrel/WDI-GROUP-PROJECT#technologies-used)Technologies Used
+### [](https://github.com/weresquirrel/WDI-third-PROJECT#technologies-used)Technologies Used
 
-### [](https://github.com/omrprt/wdi-second-project#dependencies)Dependencies
+### [](https://github.com/omrprt/wdi-third-project#dependencies)Dependencies
 - angular filePicker
 - bcrypt
 - bluebird
@@ -90,3 +90,53 @@ Your app must:
 - https://coolors.co/
 - https://logomakr.com/
 - http://fontawesome.io/
+
+### [](https://github.com/weresquirrel/WDI-third-PROJECT#challenges-faced)Challenges Faced
+
+- Drying up the code
+- Matching heroku to present as our localhost is.
+- Coding the search functionality.
+- Implementing geocoding.
+- Coding the tests.
+
+
+<figure>
+  <a href="#"><img src="./src/assets/images/projectphotos/testerrors.png"></a>
+  <figcaption>Getting Errors on our Code</figcaption>
+</figure>
+
+### [](https://github.com/weresquirrel/wdi-third-project#where-next)Where next?
+
+How can the app be extended and improved:
+
+- making some of the schema's editable:
+ * currently can't update profile information
+ * currenlty can't delete events or profile
+
+- add modals:
+ * like when an event is made
+
+- have a album for the event:
+  * guest to add pictures to an event.
+
+- Improving the code:
+  * I am certain that there are areas of my code to be more efficient and dryer.
+  * the code could be refactored further.
+
+- Improve user experience:
+  * Futher improve how information is presented in order to have a better user experience.
+  * Friend people
+
+- Utilize more APIs:
+  * Use and API to shop for items guest are bringing
+
+## Acknowledgments
+* Would like to thank my instructors at GA, and classmates.
+* Thanks to Robert, Brian and Josh for their ux feedback.
+* Thanks to our partners for their ongoing support.
+* Thanks to our friends that continue to encourage and support us.
+
+<figure>
+  <a href="#"><img src="./src/assets/images/projectphotos/eventshowpre.png"></a>
+  <figcaption>An early template</figcaption>
+</figure>
