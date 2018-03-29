@@ -28,17 +28,17 @@ Your app must:
 * A **team git repository hosted on Github**, with a link to your hosted project, and frequent commits from _every_ team member dating back to the _very beginning_ of the project
 * **A ``readme.md`` file**
 
-### [](https://github.com/weresquirrel/WDI-third-PROJECT#setup)Installation and setup
+### [](https://github.com/omrprt/wdi-third-project#setup)Installation and setup
 
 #### Run Locally
-- Download or clone the [Github repo](https://github.com/weresquirrel/WDI-third-PROJECT)
+- Download or clone the [Github repo](https://github.com/omrprt/wdi-third-project)
 - Run `gulp` in the terminal to compile the source code and open in the browser
 
 #### View Online
 - [View on Heroku](https://bringit204.herokuapp.com/)
-- [View on Github](https://github.com/weresquirrel/WDI-GROUP-PROJECT)
+- [View on Github](https://github.com/omrprt/wdi-third-project)
 
-### [](https://github.com/weresquirrel/WDI-GROUP-PROJECT#approach-taken)Approach Taken
+### [](https://github.com/omrprt/wdi-third-project#approach-taken)Approach Taken
 
 1. Reviewed the project brief
 2. Brain stormed themed for an app
@@ -55,7 +55,7 @@ Your app must:
   <figcaption>Wireframe using Balsamiq</figcaption>
 </figure>
 
-### [](https://github.com/weresquirrel/WDI-third-PROJECT#technologies-used)Technologies Used
+### [](https://github.com/omrprt/wdi-third-project#technologies-used)Technologies Used
 
 ### [](https://github.com/omrprt/wdi-third-project#dependencies)Dependencies
 - angular filePicker
@@ -70,7 +70,7 @@ Your app must:
 - mongoose
 - morgan
 
-###Others
+### [](https://github.com/omrprt/wdi-third-project#others)Others
 
 - HTML5
 - SCSS
@@ -91,7 +91,7 @@ Your app must:
 - https://logomakr.com/
 - http://fontawesome.io/
 
-### [](https://github.com/weresquirrel/WDI-third-PROJECT#challenges-faced)Challenges Faced
+### [](https://github.com/omrprt/wdi-third-project#challenges-faced)Challenges Faced
 
 - Drying up the code
 - Matching heroku to present as our localhost is.
@@ -105,7 +105,7 @@ Your app must:
   <figcaption>Getting Errors on our Code</figcaption>
 </figure>
 
-### [](https://github.com/weresquirrel/wdi-third-project#where-next)Where next?
+### [](https://github.com/omrprt/wdi-third-project#where-next)Where next?
 
 How can the app be extended and improved:
 
